@@ -17,12 +17,18 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Header / Logo */}
+        {/* Barre du haut / Logo */}
         <header
           style={{
             display: "flex",
             alignItems: "center",
-            padding: "1rem 2rem",
+            padding: "1.5rem 2rem",
+            height: "80px",
+            backgroundColor: "#0B0B0F",
+            borderBottom: "1px solid #1c1c1c",
+            position: "sticky",
+            top: 0,
+            zIndex: 10,
           }}
         >
           <Image
@@ -31,10 +37,14 @@ export default function Home() {
             width={160}
             height={160}
             priority
+            style={{
+              maxHeight: "50px",
+              width: "auto",
+            }}
           />
         </header>
 
-        {/* Accueil */}
+        {/* Section principale */}
         <section
           style={{
             display: "flex",
