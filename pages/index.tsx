@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,6 +8,10 @@ export default function Home() {
         <title>Versatil</title>
         <meta name="description" content="Lance ton shop avec l'IA" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main
@@ -18,7 +22,6 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Header avec logo */}
         <header
           style={{
             display: "flex",
@@ -26,17 +29,12 @@ export default function Home() {
             justifyContent: "flex-start",
             padding: "1rem 2rem",
             height: "100px",
-            backgroundColor: "#0B0B0F",
-            borderBottom: "1px solid #1c1c1c",
-            position: "sticky",
-            top: 0,
-            zIndex: 10,
           }}
         >
           <div className="logo-container">
             <Image
               src="/logo-versatil.png"
-              alt="Logo Versatil"
+              alt="Versatil Logo"
               layout="fill"
               objectFit="contain"
               priority
@@ -44,7 +42,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Section principale */}
         <section
           style={{
             display: "flex",
@@ -55,7 +52,6 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          {/* Accroche avec dégradé */}
           <p
             style={{
               fontSize: "0.9rem",
@@ -63,40 +59,17 @@ export default function Home() {
               background: "linear-gradient(135deg, #7F00FF, #00C3FF)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              textAlign: "center",
               marginBottom: "1rem",
-              lineHeight: 1.4,
-              maxWidth: 300,
             }}
           >
             L’outil préféré des E-Commerçants
           </p>
-
-          {/* Titre principal */}
-          <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "2rem" }}>
+          <h1 style={{ fontSize: "2rem", maxWidth: 600 }}>
             Tu n'es plus qu'à quelques étapes de ta première vente
           </h1>
-
-          {/* CTA */}
-          <a
-            href="#"
-            style={{
-              padding: "0.8rem 2rem",
-              borderRadius: "8px",
-              backgroundImage: "linear-gradient(135deg, #7F00FF, #00C3FF)",
-              color: "#fff",
-              fontWeight: "bold",
-              textDecoration: "none",
-              transition: "0.3s",
-            }}
-          >
-            Commencer maintenant
-          </a>
         </section>
       </main>
 
-      {/* Responsive logo sizes */}
       <style jsx>{`
         .logo-container {
           position: relative;
@@ -106,13 +79,8 @@ export default function Home() {
 
         @media (max-width: 768px) {
           .logo-container {
-            width: 180px;
-            height: 65px;
-            margin-left: -10px;
-          }
-
-          h1 {
-            font-size: 1.5rem !important;
+            width: 160px;
+            height: 60px;
           }
         }
       `}</style>
