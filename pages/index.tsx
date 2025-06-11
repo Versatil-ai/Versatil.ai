@@ -18,13 +18,13 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Header avec logo responsive */}
+        {/* Header avec logo */}
         <header
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "flex-start",
-            padding: "1rem",
+            padding: "1rem 2rem",
             height: "80px",
             backgroundColor: "#0B0B0F",
             borderBottom: "1px solid #1c1c1c",
@@ -33,13 +33,7 @@ export default function Home() {
             zIndex: 10,
           }}
         >
-          <div
-            style={{
-              position: "relative",
-              width: "140px",
-              height: "40px",
-            }}
-          >
+          <div className="logo-container">
             <Image
               src="/logo-versatil.png"
               alt="Logo Versatil"
@@ -61,12 +55,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          {/* Titre principal */}
-          <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "1rem" }}>
-            Tu n'es plus qu'à quelques étapes de ta première vente
-          </h1>
-
-          {/* Sous-titre avec dégradé par lettre */}
+          {/* Accroche avec dégradé */}
           <p
             style={{
               fontSize: "0.9rem",
@@ -76,7 +65,7 @@ export default function Home() {
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
               textAlign: "center",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
               lineHeight: 1.4,
               maxWidth: 300,
             }}
@@ -84,7 +73,12 @@ export default function Home() {
             L’outil préféré des E-Commerçants
           </p>
 
-          {/* Bouton d'action */}
+          {/* Titre principal */}
+          <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "2rem" }}>
+            Tu n'es plus qu'à quelques étapes de ta première vente
+          </h1>
+
+          {/* CTA */}
           <a
             href="#"
             style={{
@@ -101,6 +95,26 @@ export default function Home() {
           </a>
         </section>
       </main>
+
+      {/* Responsive logo sizes */}
+      <style jsx>{`
+        .logo-container {
+          position: relative;
+          width: 180px;
+          height: 60px;
+        }
+
+        @media (max-width: 768px) {
+          .logo-container {
+            width: 160px;
+            height: 55px;
+          }
+
+          h1 {
+            font-size: 1.5rem !important;
+          }
+        }
+      `}</style>
     </>
   );
 }
