@@ -65,7 +65,7 @@ export default function Home() {
             L’outil préféré des E-Commerçants
           </p>
           <h1 style={{ fontSize: "2rem", maxWidth: 600 }}>
-            Tu n'es plus qu'à quelques étapes de ta première vente
+            Tu n'es plus qu'à quelques étapes de ta première vente 🚀
           </h1>
         </section>
       </main>
