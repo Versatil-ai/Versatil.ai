@@ -75,7 +75,7 @@ export default function Home() {
 
           {/* Titre principal */}
           <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "2rem" }}>
-            Tu n'es plus qu'à quelques étapes de ta première vente
+            Tu n'es plus qu'à quelques étapes de ta première vente 🚀
           </h1>
 
           {/* CTA */}
