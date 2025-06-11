@@ -25,7 +25,7 @@ export default function Home() {
             alignItems: "center",
             justifyContent: "flex-start",
             padding: "1rem 2rem",
-            height: "80px",
+            height: "100px",
             backgroundColor: "#0B0B0F",
             borderBottom: "1px solid #1c1c1c",
             position: "sticky",
@@ -75,7 +75,7 @@ export default function Home() {
 
           {/* Titre principal */}
           <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "2rem" }}>
-            Tu n'es plus qu'à quelques étapes de ta première vente 🚀
+            Tu n'es plus qu'à quelques étapes de ta première vente
           </h1>
 
           {/* CTA */}
@@ -100,14 +100,15 @@ export default function Home() {
       <style jsx>{`
         .logo-container {
           position: relative;
-          width: 180px;
-          height: 60px;
+          width: 220px;
+          height: 80px;
         }
 
         @media (max-width: 768px) {
           .logo-container {
-            width: 160px;
-            height: 55px;
+            width: 180px;
+            height: 65px;
+            margin-left: -10px;
           }
 
           h1 {
