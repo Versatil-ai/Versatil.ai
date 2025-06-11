@@ -7,6 +7,7 @@ export default function Home() {
       <Head>
         <title>Versatil</title>
         <meta name="description" content="Lance ton shop avec l'IA" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <main
@@ -17,12 +18,12 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Barre du haut / Logo */}
+        {/* Header responsive */}
         <header
           style={{
             display: "flex",
             alignItems: "center",
-            padding: "1.5rem 2rem",
+            padding: "1rem 2rem",
             height: "80px",
             backgroundColor: "#0B0B0F",
             borderBottom: "1px solid #1c1c1c",
@@ -31,17 +32,19 @@ export default function Home() {
             zIndex: 10,
           }}
         >
-          <Image
-            src="/logo-versatil.png"
-            alt="Logo Versatil"
-            width={160}
-            height={160}
-            priority
-            style={{
-              maxHeight: "50px",
-              width: "auto",
-            }}
-          />
+          <div style={{ position: "relative", width: "160px", height: "auto" }}>
+            <Image
+              src="/logo-versatil.png"
+              alt="Logo Versatil"
+              layout="responsive"
+              width={160}
+              height={64}
+              priority
+              style={{
+                objectFit: "contain",
+              }}
+            />
+          </div>
         </header>
 
         {/* Section principale */}
