@@ -18,12 +18,13 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Header responsive */}
+        {/* Barre du haut */}
         <header
           style={{
             display: "flex",
             alignItems: "center",
-            padding: "1rem 2rem",
+            justifyContent: "flex-start",
+            padding: "1rem 1rem",
             height: "80px",
             backgroundColor: "#0B0B0F",
             borderBottom: "1px solid #1c1c1c",
@@ -32,17 +33,19 @@ export default function Home() {
             zIndex: 10,
           }}
         >
-          <div style={{ position: "relative", width: "160px", height: "auto" }}>
+          <div
+            style={{
+              position: "relative",
+              width: "140px",
+              height: "40px",
+            }}
+          >
             <Image
               src="/logo-versatil.png"
               alt="Logo Versatil"
-              layout="responsive"
-              width={160}
-              height={64}
+              layout="fill"
+              objectFit="contain"
               priority
-              style={{
-                objectFit: "contain",
-              }}
             />
           </div>
         </header>
@@ -58,14 +61,18 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ fontSize: "2rem", maxWidth: 600 }}>
+          <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "1rem" }}>
             Tu n'es plus qu'à quelques étapes de ta première vente
           </h1>
+
+          {/* Sous-texte inspiré de Copyfy */}
+          <p style={{ fontSize: "1rem", color: "#ccc", marginBottom: "2rem" }}>
+            L’outil préféré des E-Commerçants
+          </p>
 
           <a
             href="#"
             style={{
-              marginTop: "2rem",
               padding: "0.8rem 2rem",
               borderRadius: "8px",
               backgroundImage: "linear-gradient(135deg, #7F00FF, #00C3FF)",
