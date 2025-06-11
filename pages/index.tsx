@@ -73,14 +73,15 @@ export default function Home() {
       <style jsx>{`
         .logo-container {
           position: relative;
-          width: 220px;
-          height: 80px;
+          width: 280px;
+          height: 100px;
         }
 
         @media (max-width: 768px) {
           .logo-container {
-            width: 160px;
-            height: 60px;
+            width: 200px;
+            height: 70px;
+            margin-left: -10px;
           }
         }
       `}</style>
