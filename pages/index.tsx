@@ -18,13 +18,13 @@ export default function Home() {
           minHeight: "100vh",
         }}
       >
-        {/* Barre du haut */}
+        {/* Header avec logo responsive */}
         <header
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "flex-start",
-            padding: "1rem 1rem",
+            padding: "1rem",
             height: "80px",
             backgroundColor: "#0B0B0F",
             borderBottom: "1px solid #1c1c1c",
@@ -61,15 +61,30 @@ export default function Home() {
             textAlign: "center",
           }}
         >
+          {/* Titre principal */}
           <h1 style={{ fontSize: "2rem", maxWidth: 600, marginBottom: "1rem" }}>
             Tu n'es plus qu'à quelques étapes de ta première vente
           </h1>
 
-          {/* Sous-texte inspiré de Copyfy */}
-          <p style={{ fontSize: "1rem", color: "#ccc", marginBottom: "2rem" }}>
+          {/* Sous-titre avec dégradé par lettre */}
+          <p
+            style={{
+              fontSize: "0.9rem",
+              fontWeight: 500,
+              background: "linear-gradient(135deg, #7F00FF, #00C3FF)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              textAlign: "center",
+              marginBottom: "2rem",
+              lineHeight: 1.4,
+              maxWidth: 300,
+            }}
+          >
             L’outil préféré des E-Commerçants
           </p>
 
+          {/* Bouton d'action */}
           <a
             href="#"
             style={{
